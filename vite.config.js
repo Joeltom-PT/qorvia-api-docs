@@ -1,14 +1,15 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  optimizeDeps: {
-    exclude: ['zenscroll']
-  },
   build: {
-    commonjsOptions: {
-      include: [/node_modules/]
+    rollupOptions: {
+      output: {
+        entryFileNames: 'index.js',
+        chunkFileNames: 'chunks/[name].js',
+        assetFileNames: 'assets/[name].[ext]'
+      }
     }
   }
-})
+});
