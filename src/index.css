@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add some global styles */
+body {
+  @apply bg-gray-50;
+}
+
+/* Ensure proper nesting of Tailwind classes */
+.swagger-ui {
+  @apply font-sans;
+}

@@ -1,0 +1,17 @@
+@import 'swagger-ui-react/swagger-ui.css';
+
+.swagger-ui .info .title {
+  color: #374151;
+}
+
+.swagger-ui .opblock .opblock-summary-method {
+  border-radius: 0.375rem;
+}
+
+.swagger-ui .btn {
+  border-radius: 0.375rem;
+}
+
+.swagger-ui select {
+  border-radius: 0.375rem;
+}
